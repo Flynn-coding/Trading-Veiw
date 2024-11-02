@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #00FF00;
+    background-color: black;
+    text-align: center;
+}
+
+#loginContainer, #premiumPrompt {
+    margin-top: 50px;
+}
+
+#content {
+    margin-top: 50px;
+    color: #00FF00;
+}
