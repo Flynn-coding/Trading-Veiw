@@ -13,3 +13,21 @@ body {
     margin-top: 50px;
     color: #00FF00;
 }
+body {
+    background-color: black;
+    color: #00FF00;
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Matrix Rain */
+#matrixCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Behind other content */
+    background: black;
+}
