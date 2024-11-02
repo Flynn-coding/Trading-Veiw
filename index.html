@@ -2,31 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Wallet Tracker Login</title>
+    <title>Crypto Wallet Analyzer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="loginContainer">
-        <h1>Login to Access Wallet Tracker</h1>
-        <input type="email" id="email" placeholder="Email">
-        <input type="password" id="password" placeholder="Password">
-        <button id="loginButton">Login</button>
-        <div id="error"></div>
+    <h1>Crypto Wallet Analyzer</h1>
+    <div id="walletAnalyzer">
+        <input type="text" id="walletAddress" placeholder="Enter Wallet Address">
+        <button id="analyzeButton">Analyze Wallet</button>
+        <div id="transactionInfo"></div>
     </div>
 
-    <div id="content" style="display: none;">
-        <h1>Welcome to the Wallet Tracker</h1>
-        <!-- Main content here -->
-    </div>
+    <!-- Matrix Rain Background -->
+    <canvas id="matrixCanvas"></canvas>
 
-    <div id="premiumPrompt" style="display: none;">
-        <h2>Unlock Premium Access</h2>
-        <p>Your trial has ended. To continue using Wallet Tracker, please purchase premium access.</p>
-        <div id="paypal-button-container"></div>
-    </div>
-
-    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script>
-    <script src="script.js"></script>
+    <script src="matrixRain.js"></script>
+    <script src="analyze.js"></script>
 </body>
 </html>
-<script src="matrixRain.js"></script>
